@@ -23,10 +23,8 @@ class DocsApp {
             { id: 'quick-example', title: 'Quick Example' },
             { id: 'api-reference', title: 'API Reference' },
             { id: 'guides', title: 'Guides' },
-            { id: 'live-example', title: 'Live Example' },
             { id: 'migration', title: 'Migration' },
             { id: 'faq', title: 'FAQ' },
-            { id: 'changelog', title: 'Changelog' },
             { id: 'contributing', title: 'Contributing' },
             { id: 'support', title: 'Support' }
         ];
@@ -345,35 +343,6 @@ console.log('Test passed:', user);`,
                 )}
             `,
 
-            'live-example': `
-                <h1>Live Example</h1>
-                <p>Test the SDK directly in your browser. The example below loads a mock SDK if the real one is unavailable.</p>
-
-                <div class="live-example-container">
-                    <div class="live-example-controls">
-                        <button class="live-example-btn" onclick="document.getElementById('liveFrame').contentWindow.location.reload()">
-                            ↻ Reload
-                        </button>
-                        <button class="live-example-btn" onclick="window.open('examples/live-example.html', '_blank')">
-                            ⬈ Open in New Tab
-                        </button>
-                    </div>
-                    <iframe id="liveFrame" class="live-example-frame" src="examples/live-example.html"></iframe>
-                </div>
-
-                <h2>What You're Testing</h2>
-                <ul>
-                    <li>SDK initialization with mock backend</li>
-                    <li>Sign-in button triggering OAuth flow</li>
-                    <li>Popup-to-parent communication via postMessage</li>
-                    <li>User data display on success</li>
-                </ul>
-
-                <div class="info-box">
-                    <p>The live example uses a mock SDK fallback for demonstration. In production, replace with your real backend URL.</p>
-                </div>
-            `,
-
             'migration': `
                 <h1>Migration Guide</h1>
                 <p>Upgrading from older versions? Here's how to migrate from named exports to default exports.</p>
@@ -465,31 +434,6 @@ SDK.init({ ... });`,
                 <p><strong>A:</strong> Absolutely! The SDK is framework-agnostic. Call it from event handlers or hooks—no special integration needed.</p>
             `,
 
-            'changelog': `
-                <h1>Changelog</h1>
-                <p>Version history and release notes.</p>
-
-                <h2>v0.3.0 — 2025-10-31</h2>
-                <ul>
-                    <li><strong>Added:</strong> Live example iframe with mock SDK fallback</li>
-                    <li><strong>Added:</strong> Complete API documentation</li>
-                    <li><strong>Fixed:</strong> UMD export handling in Vite builds</li>
-                    <li><strong>Improved:</strong> Error messages for missing configuration</li>
-                </ul>
-
-                <h2>v0.2.0 — 2025-09-20</h2>
-                <ul>
-                    <li><strong>Added:</strong> signIn() method with popup flow</li>
-                    <li><strong>Added:</strong> postMessage origin validation</li>
-                    <li><strong>Added:</strong> User object return type</li>
-                </ul>
-
-                <h2>v0.1.0 — 2025-08-01</h2>
-                <ul>
-                    <li><strong>Added:</strong> Initial init() configuration</li>
-                    <li><strong>Added:</strong> Alpha SDK release</li>
-                </ul>
-            `,
 
             'contributing': `
                 <h1>Contributing</h1>
@@ -538,8 +482,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...`
                 <p>Need help? We're here to assist you.</p>
 
                 <h2>Contact</h2>
-                <p><strong>Email:</strong> <a href="mailto:support@azizbekid.dev">support@azizbekid.dev</a></p>
-                <p><strong>GitHub Issues:</strong> <a href="https://github.com/azizbekid/sdk/issues" target="_blank">Report bugs or request features</a></p>
+                <p><strong>Email:</strong> <a href="mailto:itzazizbek@gmail.com">support@azizbekid.dev</a></p>
 
                 <h2>Common Issues & Solutions</h2>
 
